@@ -1,39 +1,84 @@
-Online Voting System
-An Online Voting System that allows users to securely cast their votes electronically. The system leverages modern web technologies and a robust backend to ensure a seamless and reliable voting process.
 
-Features
-User Registration and Authentication: Secure login for voters.
-Admin Panel: Manage elections, add candidates, and monitor voting progress.
-Voting Mechanism: Simple, intuitive interface for casting votes.
-Results Display: Real-time or post-voting display of election results.
-Data Security: Ensures votes are stored securely and are tamper-proof.
+# **Voting System Portal**
 
+A dynamic web application built using Java Servlets, JSP, and Maven for managing voting systems. This project includes features such as user-friendly voting forms, real-time results, and configurable poll settings.
 
-Technologies Used
-Frontend
-HTML: For structuring web pages.
-CSS: For styling and responsive design.
-Backend
-Java: Core logic and server-side functionality.
-Database
-SQL: For storing user information, votes, and election data securely.
+---
+
+## **Table of Contents**
+1. [Project Overview]
+2. [Features]
+3. [Technologies Used]
+4. [Installation and Setup]
 
 
+---
 
-Prerequisites
-Java Development Kit (JDK) installed.
-A web server like Apache Tomcat for running the application.
-MySQL or any other SQL-compatible database system.
+## **Project Overview**
+This Voting System Portal provides a secure and straightforward platform for users to cast votes. The application integrates features like dynamic user interfaces, robust error handling, and efficient backend processing.
+
+---
+
+## **Features**
+- **Vote Submission**: Users can select and submit their votes.
+- **Poll Results**: Real-time display of voting results.
+- **Admin Settings**: Manage poll configurations and candidate details.
+- **Responsive Design**: Works seamlessly on desktops, tablets, and mobile devices.
+- **Input Validation**: Robust client-side and server-side validation.
+
+---
+
+## **Technologies Used**
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Backend**: Java Servlets, JSP
+- **Build Tool**: Maven
+- **Database**: MySQL
+- **Version Control**: Git and GitHub
+
+---
+
+## **Installation and Setup**
+
+### **Prerequisites**
+1. Java Development Kit (JDK 8 or higher)
+2. Apache Maven
+3. MySQL Server
+4. Apache Tomcat Server
+5. Git
+
+### **Steps to Setup**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/voting-system.git
+   cd voting-system
+   ```
+2. Configure the database:
+   - Create a MySQL database named `voting_system`.
+   - Execute the SQL script located in `/src/main/resources/db/setup.sql`.
+
+3. Update database credentials:
+   - Modify the `application.properties` file in the `src/main/resources/` directory:
+     ```properties
+     db.url=jdbc:mysql://localhost:3306/voting_system
+     db.username=root
+     db.password=yourpassword
+     ```
+
+4. Build the project:
+   ```bash
+   mvn clean install
+   ```
+
+5. Deploy the application:
+   - Copy the generated WAR file from the `target/` directory to the `webapps/` folder of your Tomcat server.
+
+6. Start the Tomcat server and access the application:
+   - Open a browser and navigate to `http://localhost:8080/voting-system`.
+
+## **Usage**
+1. Navigate to the homepage.
+2. Cast your vote by selecting a candidate.
+3. View real-time poll results on the "Poll Results" page.
+4. Admins can configure polls using the "Settings" page.
 
 
-Usage
-Voters:
-Register and log in to cast votes.
-Admins:
-Log in to manage the election process and monitor results.
-
-
-Future Enhancements
-Two-factor authentication for enhanced security.
-Blockchain integration for ensuring vote integrity.
-Enhanced UI/UX design for a better user experience.
