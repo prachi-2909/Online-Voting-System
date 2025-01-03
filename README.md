@@ -61,7 +61,7 @@ This Voting System Portal provides a secure and straightforward platform for use
      ```properties
      db.url=jdbc:mysql://localhost:3306/voting_system
      db.username=root
-     db.password=yourpassword
+     db.password=password
      ```
 
 4. Build the project:
