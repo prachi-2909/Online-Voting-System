@@ -49,17 +49,17 @@ This Voting System Portal provides a secure and straightforward platform for use
 ### **Steps to Setup**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/voting-system.git
+   git clone https://github.com/prachi-2909/Online-Voting-System.git
    cd voting-system
    ```
 2. Configure the database:
-   - Create a MySQL database named `voting_system`.
+   - Create a MySQL database named `Online-Voting_System`.
    - Execute the SQL script located in `/src/main/resources/db/setup.sql`.
 
 3. Update database credentials:
    - Modify the `application.properties` file in the `src/main/resources/` directory:
      ```properties
-     db.url=jdbc:mysql://localhost:3306/voting_system
+     db.url=jdbc:mysql://localhost:3306/Online-Voting-System
      db.username=root
      db.password=password
      ```
